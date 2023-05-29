@@ -1,8 +1,9 @@
 import { sayHello } from '@my-app/lib';
+import { Button } from '@my-app/ui';
 import { Inter } from 'next/font/google';
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '@/styles/Home.module.css';
+import styles from '/styles/Home.module.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,6 +22,7 @@ export default function Home() {
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.tsx</code>
           </p>
+          <Button>hello from @my-app/ui</Button>
           <div>{sayHello()}</div>
           <div>
             <a
