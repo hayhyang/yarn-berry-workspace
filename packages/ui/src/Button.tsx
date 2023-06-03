@@ -9,7 +9,7 @@ const Button = (props: ButtonProps) => {
   const { children, onClick, ...other } = props;
 
   return (
-    <button type="button" onClick={onClick} {...other}>
+    <button onClick={onClick} {...other}>
       {children}
     </button>
   );
