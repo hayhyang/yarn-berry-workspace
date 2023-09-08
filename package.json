@@ -1,9 +1,12 @@
 {
-  "name": "example",
+  "name": "yarn-berry-workspace",
   "packageManager": "yarn@3.6.3",
   "private": true,
   "workspaces": [
     "services/*",
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
 }
