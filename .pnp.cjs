@@ -12,8 +12,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "example",\
+        "name": "yarn-berry-workspace",\
         "reference": "workspace:."\
+      },\
+      {\
+        "name": "lib",\
+        "reference": "workspace:packages/lib"\
+      },\
+      {\
+        "name": "ui",\
+        "reference": "workspace:packages/ui"\
       },\
       {\
         "name": "admin",\
@@ -28,8 +36,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["admin", ["workspace:services/admin"]],\
-      ["example", ["workspace:."]],\
-      ["web", ["workspace:services/web"]]\
+      ["lib", ["workspace:packages/lib"]],\
+      ["ui", ["workspace:packages/ui"]],\
+      ["web", ["workspace:services/web"]],\
+      ["yarn-berry-workspace", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -2766,16 +2776,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["example", [\
-        ["workspace:.", {\
-          "packageLocation": "./",\
-          "packageDependencies": [\
-            ["example", "workspace:."],\
-            ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
-          ],\
-          "linkType": "SOFT"\
-        }]\
-      ]],\
       ["exponential-backoff", [\
         ["npm:3.1.1", {\
           "packageLocation": "./.yarn/cache/exponential-backoff-npm-3.1.1-04df458b30-3d21519a4f.zip/node_modules/exponential-backoff/",\
@@ -3858,6 +3858,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["type-check", "npm:0.4.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lib", [\
+        ["workspace:packages/lib", {\
+          "packageLocation": "./packages/lib/",\
+          "packageDependencies": [\
+            ["lib", "workspace:packages/lib"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["lilconfig", [\
@@ -5586,6 +5595,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["ui", [\
+        ["workspace:packages/ui", {\
+          "packageLocation": "./packages/ui/",\
+          "packageDependencies": [\
+            ["ui", "workspace:packages/ui"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["unbox-primitive", [\
         ["npm:1.0.2", {\
           "packageLocation": "./.yarn/cache/unbox-primitive-npm-1.0.2-cb56a05066-b7a1cf5862.zip/node_modules/unbox-primitive/",\
@@ -5878,6 +5896,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["yaml", "npm:2.3.2"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["yarn-berry-workspace", [\
+        ["workspace:.", {\
+          "packageLocation": "./",\
+          "packageDependencies": [\
+            ["yarn-berry-workspace", "workspace:."],\
+            ["typescript", "patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["yocto-queue", [\
