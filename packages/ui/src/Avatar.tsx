@@ -1,9 +1,15 @@
-const Avatar = () => {
+interface AvatarProps {
+  id: string;
+  username: string;
+  avatar: string;
+}
+
+const Avatar = (props: AvatarProps) => {
   const user = {
-    id: 1,
+    id: '1',
     username: 'johndoe',
     avatar: 'https://example.com/user/johndoe/avatar.jpg',
   };
-  // size: xl, lg, md, sm, xs
-  return <div></div>;
+
+  return <div>{}</div>;
 };

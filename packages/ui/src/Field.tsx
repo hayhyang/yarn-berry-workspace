@@ -1,5 +1,11 @@
+import Label from 'Label';
+
 const Field = () => {
-  return null;
+  return (
+    <div>
+      <Label></Label>
+    </div>
+  );
 };
 
 export default Field;

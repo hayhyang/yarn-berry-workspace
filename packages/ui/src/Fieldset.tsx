@@ -1,5 +1,5 @@
 const Fieldset = () => {
-  return null;
+  return <fieldset></fieldset>;
 };
 
 export default Fieldset;
