@@ -728,7 +728,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.5.9":
+"@types/node@npm:20.5.9, @types/node@npm:^20.2.5":
   version: 20.5.9
   resolution: "@types/node@npm:20.5.9"
   checksum: 717490e94131722144878b4ca1a963ede1673bb8f2ef78c2f5b50b918df6dc9b35e7f8283e5c2a7a9f137730f7c08dc6228e53d4494a94c9ee16881e6ce6caed
@@ -2648,6 +2648,12 @@ __metadata:
   checksum: 9c7a74a2827f9294c009266c82031030eae811ca87b0da3dceb8d6071b9bde22c9f3daef0469c3c533cc67a97d8a167cd9fc0389350e5f415f61a79b171ded16
   languageName: node
   linkType: hard
+
+"icon@workspace:packages/icon":
+  version: 0.0.0-use.local
+  resolution: "icon@workspace:packages/icon"
+  languageName: unknown
+  linkType: soft
 
 "iconv-lite@npm:^0.6.2":
   version: 0.6.3
@@ -4660,6 +4666,13 @@ __metadata:
 "ui@workspace:packages/ui":
   version: 0.0.0-use.local
   resolution: "ui@workspace:packages/ui"
+  dependencies:
+    "@types/node": ^20.2.5
+    "@types/react": ^18.2.15
+    "@types/react-dom": ^18.2.7
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    typescript: ^5.0.2
   languageName: unknown
   linkType: soft
 
