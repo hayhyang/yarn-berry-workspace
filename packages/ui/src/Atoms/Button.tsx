@@ -4,21 +4,22 @@ import React, {
   ReactNode,
 } from "react";
 
-import { Size } from "../../types/index";
+import { Size, Variant } from "../../types/index";
 
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
+  onClick: MouseEventHandler<HTMLButtonElement>;
   size: Size;
-  icon: string;
+  icon?: string;
+  variant: Variant;
 };
 
 const Button = (props: ButtonProps) => {
-  const { value, onClick, icon, ...other } = props;
+  const { children, variant, onClick, icon, ...other } = props;
 
   return (
     <button onClick={onClick} {...other}>
-      {value}
+      {children}
       {icon && icon}
     </button>
   );

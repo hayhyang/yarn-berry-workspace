@@ -1,5 +1,7 @@
 import { ImgHTMLAttributes } from "react";
 
-export type Size = "large" | "medium" | "small" | "tiny"; // 64, 40, 24, 16
+export type Size = "xlarge" | "large" | "medium" | "small" | "xsmall";
+
+export type Variant = "primary" | "warning" | "default";
 
 export interface ImageProps extends ImgHTMLAttributes<HTMLImageElement> {}
