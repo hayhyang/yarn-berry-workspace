@@ -1,4 +1,4 @@
 {
-  "name": "lib",
+  "name": "@alter/lib",
   "packageManager": "yarn@3.6.3"
 }
