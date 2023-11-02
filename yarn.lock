@@ -19,6 +19,70 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@alter/admin@workspace:services/admin":
+  version: 0.0.0-use.local
+  resolution: "@alter/admin@workspace:services/admin"
+  dependencies:
+    "@types/react": ^18.2.15
+    "@types/react-dom": ^18.2.7
+    "@typescript-eslint/eslint-plugin": ^6.0.0
+    "@typescript-eslint/parser": ^6.0.0
+    "@vitejs/plugin-react": ^4.0.3
+    eslint: ^8.45.0
+    eslint-plugin-react-hooks: ^4.6.0
+    eslint-plugin-react-refresh: ^0.4.3
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-router-dom: ^6.15.0
+    typescript: ^5.0.2
+    vite: ^4.4.5
+  languageName: unknown
+  linkType: soft
+
+"@alter/icon@workspace:packages/icon":
+  version: 0.0.0-use.local
+  resolution: "@alter/icon@workspace:packages/icon"
+  languageName: unknown
+  linkType: soft
+
+"@alter/lib@workspace:packages/lib":
+  version: 0.0.0-use.local
+  resolution: "@alter/lib@workspace:packages/lib"
+  languageName: unknown
+  linkType: soft
+
+"@alter/ui@workspace:packages/ui":
+  version: 0.0.0-use.local
+  resolution: "@alter/ui@workspace:packages/ui"
+  dependencies:
+    "@types/node": ^20.2.5
+    "@types/react": ^18.2.15
+    "@types/react-dom": ^18.2.7
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    typescript: ^5.0.2
+  languageName: unknown
+  linkType: soft
+
+"@alter/web@workspace:services/web":
+  version: 0.0.0-use.local
+  resolution: "@alter/web@workspace:services/web"
+  dependencies:
+    "@types/node": 20.5.9
+    "@types/react": 18.2.21
+    "@types/react-dom": 18.2.7
+    autoprefixer: 10.4.15
+    eslint: 8.48.0
+    eslint-config-next: 13.4.19
+    next: 13.4.19
+    postcss: 8.4.29
+    react: 18.2.0
+    react-dom: 18.2.0
+    tailwindcss: 3.3.3
+    typescript: 5.2.2
+  languageName: unknown
+  linkType: soft
+
 "@ampproject/remapping@npm:^2.2.0":
   version: 2.2.1
   resolution: "@ampproject/remapping@npm:2.2.1"
@@ -943,26 +1007,6 @@ __metadata:
   checksum: 538ba38af0cc9e5ef983aee196c4b8b4d87c0c94532334fa7e065b2c8a1f85863467bb774231aae91613fcda5e68740c15d97b1967ae3394d20faddddd8af61d
   languageName: node
   linkType: hard
-
-"admin@workspace:services/admin":
-  version: 0.0.0-use.local
-  resolution: "admin@workspace:services/admin"
-  dependencies:
-    "@types/react": ^18.2.15
-    "@types/react-dom": ^18.2.7
-    "@typescript-eslint/eslint-plugin": ^6.0.0
-    "@typescript-eslint/parser": ^6.0.0
-    "@vitejs/plugin-react": ^4.0.3
-    eslint: ^8.45.0
-    eslint-plugin-react-hooks: ^4.6.0
-    eslint-plugin-react-refresh: ^0.4.3
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-router-dom: ^6.15.0
-    typescript: ^5.0.2
-    vite: ^4.4.5
-  languageName: unknown
-  linkType: soft
 
 "agent-base@npm:6, agent-base@npm:^6.0.2":
   version: 6.0.2
@@ -2657,12 +2701,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"icon@workspace:packages/icon":
-  version: 0.0.0-use.local
-  resolution: "icon@workspace:packages/icon"
-  languageName: unknown
-  linkType: soft
-
 "iconv-lite@npm:^0.6.2":
   version: 0.6.3
   resolution: "iconv-lite@npm:0.6.3"
@@ -3137,12 +3175,6 @@ __metadata:
   checksum: 12c5021c859bd0f5248561bf139121f0358285ec545ebf48bb3d346820d5c61a4309535c7f387ed7d84361cf821e124ce346c6b7cef8ee09a67c1473b46d0fc4
   languageName: node
   linkType: hard
-
-"lib@workspace:packages/lib":
-  version: 0.0.0-use.local
-  resolution: "lib@workspace:packages/lib"
-  languageName: unknown
-  linkType: soft
 
 "lilconfig@npm:^2.0.5, lilconfig@npm:^2.1.0":
   version: 2.1.0
@@ -4695,19 +4727,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ui@workspace:packages/ui":
-  version: 0.0.0-use.local
-  resolution: "ui@workspace:packages/ui"
-  dependencies:
-    "@types/node": ^20.2.5
-    "@types/react": ^18.2.15
-    "@types/react-dom": ^18.2.7
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    typescript: ^5.0.2
-  languageName: unknown
-  linkType: soft
-
 "unbox-primitive@npm:^1.0.2":
   version: 1.0.2
   resolution: "unbox-primitive@npm:1.0.2"
@@ -4817,25 +4836,6 @@ __metadata:
   checksum: 23d4bc58634dbe13b86093e01c6a68d8096028b664ab7139d58f0c37d962d549a940e98f2f201cecdabd6f9c340338dc73ef8bf094a2249ef582f35183d1a131
   languageName: node
   linkType: hard
-
-"web@workspace:services/web":
-  version: 0.0.0-use.local
-  resolution: "web@workspace:services/web"
-  dependencies:
-    "@types/node": 20.5.9
-    "@types/react": 18.2.21
-    "@types/react-dom": 18.2.7
-    autoprefixer: 10.4.15
-    eslint: 8.48.0
-    eslint-config-next: 13.4.19
-    next: 13.4.19
-    postcss: 8.4.29
-    react: 18.2.0
-    react-dom: 18.2.0
-    tailwindcss: 3.3.3
-    typescript: 5.2.2
-  languageName: unknown
-  linkType: soft
 
 "which-boxed-primitive@npm:^1.0.2":
   version: 1.0.2
