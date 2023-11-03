@@ -1,6 +1,7 @@
 interface Option {
   label: string;
-  handler: () => null;
+  value: string | number | boolean;
+  handler: (value: string | number | boolean) => null;
 }
 
 interface DropdownProps {
@@ -22,8 +23,8 @@ const Dropdown = (props: DropdownProps) => {
   );
 };
 
-const Option = ({ handler, label }: any) => {
-  return <li onClick={handler}>{label}</li>;
+const Option = ({ handler, label, value }: any) => {
+  return <li onClick={() => handler(value)}>{label}</li>;
 };
 
 export default Dropdown;

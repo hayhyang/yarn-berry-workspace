@@ -1,4 +1,4 @@
-import Button from "Atoms/Button";
+import Button from "../Atoms/Button";
 
 interface PaginationProps {
   total: number;

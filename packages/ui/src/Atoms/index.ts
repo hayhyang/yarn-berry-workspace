@@ -15,6 +15,7 @@ import Switch from "./Switch";
 import Text from "./Text";
 import Textarea from "./Textarea";
 import Thumbnail from "./Thumbnail";
+import Title from "./Title";
 
 export default {
   Avatar,
@@ -34,4 +35,5 @@ export default {
   Text,
   Textarea,
   Thumbnail,
+  Title,
 };

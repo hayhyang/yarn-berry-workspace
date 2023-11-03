@@ -1,5 +1,5 @@
-import Footer from "Organisms/Footer";
-import Header from "Organisms/Header";
+import Footer from "../Organisms/Footer";
+import Header from "../Organisms/Header";
 import { ReactNode } from "react";
 
 interface AppTemplateProps {
