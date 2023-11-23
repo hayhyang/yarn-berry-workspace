@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import styles from "./Title.module.css";
+import styles from "./Title.module.scss";
 
 interface TitleProps {
   level: number;
